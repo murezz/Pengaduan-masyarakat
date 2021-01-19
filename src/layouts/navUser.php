@@ -16,8 +16,8 @@
         <hr class="sidebar-divider my-0">
 
         <!-- Nav Item - Dashboard -->
-        <li class="nav-item active">
-            <a class="nav-link" href="index.html">
+        <li class="nav-item <?php if ($title === "Dashboard") echo "active"; ?>">
+            <a class="nav-link" href="../user/dashboard.php">
                 <i class="fas fa-users"></i>
                 <span>Masyarakat</span></a>
         </li>
@@ -32,22 +32,22 @@
 
 
         <!-- Nav Item - Buat Laporan -->
-        <li class="nav-item" name="link">
+        <li class="nav-item <?php if ($title === "Buat Laporan") echo "active"; ?>">
             <a class="nav-link" href="../user/buatLaporan.php">
                 <i class="fas fa-edit"></i>
                 <span>Buat Laporan</span></a>
         </li>
 
         <!-- Nav Item - Laporan masyarakat -->
-        <li class="nav-item">
+        <li class="nav-item <?php if ($title === "Isi Laporan") echo "active"; ?>">
             <a class="nav-link" href="../user/lihatLaporan.php">
                 <i class="fas fa-book-open"></i>
                 <span>Laporan masyarakat</span></a>
         </li>
 
         <!-- Nav Item - Tanggapan -->
-        <li class="nav-item">
-            <a class="nav-link" href="../user/lihatLaporan.php">
+        <li class="nav-item <?php if ($title === "Tanggapan") echo "active"; ?>">
+            <a class="nav-link" href="../user/tanggapan.php">
                 <i class="fas fa-bookmark"></i>
                 <span>Tanggapan</span></a>
         </li>
@@ -59,6 +59,7 @@
         <div class="text-center d-none d-md-inline">
             <button class="rounded-circle border-0" id="sidebarToggle"></button>
         </div>
+
 
     </ul>
     <!-- End of Sidebar -->
@@ -78,15 +79,15 @@
                     <i class="fa fa-bars"></i>
                 </button>
 
-                <h5>Hai, Selamat datang di web pengaduan masyarakat</h5>
+                <h3 class="text-gray-800 ml-3"><?= $title; ?></h3>
 
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
 
                     <!-- Nav Item - User Information -->
                     <li class="nav-item dropdown no-arrow">
-                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                        <a class="nav-link dropdown-toggle text-gray-900" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-900"></i>
                             Profile
                         </a>
                         <!-- Dropdown - User Information -->

@@ -16,6 +16,9 @@
     <!-- Custom styles for this template-->
     <link href="../../assets/css/sb-admin-2.min.css" rel="stylesheet">
 
+    <!-- Data aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title><?= $title; ?></title>
 </head>
 

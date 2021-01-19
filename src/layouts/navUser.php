@@ -19,7 +19,7 @@
         <li class="nav-item <?php if ($title === "Dashboard") echo "active"; ?>">
             <a class="nav-link" href="../user/dashboard.php">
                 <i class="fas fa-users"></i>
-                <span>Masyarakat</span></a>
+                <span>Dashboard</span></a>
         </li>
 
         <!-- Divider -->
@@ -39,7 +39,7 @@
         </li>
 
         <!-- Nav Item - Laporan masyarakat -->
-        <li class="nav-item <?php if ($title === "Isi Laporan") echo "active"; ?>">
+        <li class="nav-item <?php if ($title === "Laporan") echo "active"; ?>">
             <a class="nav-link" href="../user/lihatLaporan.php">
                 <i class="fas fa-book-open"></i>
                 <span>Laporan masyarakat</span></a>
@@ -75,7 +75,7 @@
             <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
                 <!-- Sidebar Toggle (Topbar) -->
-                <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                <button id="sidebarToggleTop" class="btn btn-link d-md-none ">
                     <i class="fa fa-bars"></i>
                 </button>
 
@@ -87,16 +87,22 @@
                     <!-- Nav Item - User Information -->
                     <li class="nav-item dropdown no-arrow">
                         <a class="nav-link dropdown-toggle text-gray-900" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-900"></i>
-                            Profile
+                            <i class="fas fa-users fa-sm fa-fw mr-2 text-gray-900"></i>
+                            <span>Masyarakat</span>
                         </a>
+
                         <!-- Dropdown - User Information -->
                         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <i class="fas fa-user-tie fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Login Petugas
+                            </a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                 <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                Logout
+                                Logout Account
                             </a>
                         </div>
+
                     </li>
 
                 </ul>

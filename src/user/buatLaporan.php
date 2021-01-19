@@ -40,13 +40,10 @@ require '../layouts/navUser.php';
           <form action="">
             <div class="form-group">
               <label for="isi">Isi laporan</label>
-              <textarea class="form-control" id="isi" rows="5"></textarea>
+              <textarea class="form-control" id="isi" rows="6"></textarea>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="selesai">
-              <label class="form-check-label" for="selesai">
-                Selesai
-              </label>
+              <input type="hidden" name="level" id="selesai" value="proses">
             </div>
             <div class="button mt-3">
               <button class="btn btn-outline-primary">Submit</button>

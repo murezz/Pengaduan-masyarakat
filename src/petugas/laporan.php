@@ -1,10 +1,10 @@
 <?php
 
-$title = 'Laporan';
+$title = 'Laporan Masyarakat';
 
 require '../layouts/header.php';
 
-require '../layouts/navUser.php';
+require '../layouts/navPetugas.php';
 
 ?>
 
@@ -13,12 +13,12 @@ require '../layouts/navUser.php';
     <h3 class="text-gray-800">Daftar Laporan Masyarakat</h3>
   </div>
   <div class="col-6 d-flex justify-content-end">
-    <a href="buatLaporan.php" class="btn btn-primary btn-icon-split">
-      <span class="icon text-white-50">
-        <i class="fas fa-plus"></i>
-      </span>
-      <span class="text">Buat Laporan</span>
-    </a>
+    <form class="form-inline">
+      <input class="form-control mr-1 col-8" type="search" placeholder="Cari NIK" aria-label="Search">
+      <button class="btn btn-success my-2 my-sm-0" type="submit">
+        <i class="fas fa-search"></i>
+      </button>
+    </form>
   </div>
 </div>
 
@@ -33,6 +33,7 @@ require '../layouts/navUser.php';
       <th scope="col">NIK</th>
       <th scope="col">Isi Laporan</th>
       <th scope="col">Foto</th>
+      <th scope="col">action</th>
     </tr>
   </thead>
   <tbody>
@@ -42,6 +43,9 @@ require '../layouts/navUser.php';
       <td>098912290</td>
       <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut consequuntur placeat ducimus, illo sint ratione ipsum iste molestias repudiandae veritatis error nostrum in quo sed.</td>
       <td><img src="../../assets/img/img-buat-laporan.svg" width="50" alt=""></td>
+      <td>
+        <a href="" class="btn btn-success">Verify</a>
+      </td>
     </tr>
   </tbody>
 </table>

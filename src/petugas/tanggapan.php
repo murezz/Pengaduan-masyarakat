@@ -4,7 +4,7 @@ $title = 'Tanggapan';
 
 require '../layouts/header.php';
 
-require '../layouts/navUser.php';
+require '../layouts/navPetugas.php';
 
 ?>
 

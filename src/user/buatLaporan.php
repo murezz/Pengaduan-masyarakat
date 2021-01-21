@@ -12,8 +12,6 @@ require '../layouts/navUser.php';
 // Logic
 
 
-
-
 if (isset($_POST["submit"])) {
 
   if (tambahAduan($_POST) > 0) {

@@ -11,7 +11,7 @@ require '../layouts/navPetugas.php';
 
 // logic backend
 
-$result = mysqli_query($conn, "SELECT * FROM pengaduan ORDER BY id_pengaduan DESC");
+$result = mysqli_query($conn, "SELECT * FROM pengaduan WHERE status = 'proses' ORDER BY id_pengaduan DESC");
 
 ?>
 

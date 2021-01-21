@@ -52,6 +52,13 @@
                 <span>Tanggapan</span></a>
         </li>
 
+        <!-- Nav Item - Generate -->
+        <li class="nav-item <?php if ($title === "Generate") echo "active"; ?>">
+            <a class="nav-link" href="../user/generate.php">
+                <i class="fas fa-folder-open"></i>
+                <span>Generate Laporan</span></a>
+        </li>
+
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block">
 

@@ -38,6 +38,7 @@ if (isset($_POST['submit'])) {
       </div>
 
     <?php endif; ?>
+
     <div class="card-body">
       <h3 class="text-center text-primary text-uppercase text-bold">Login</h3>
       <hr class="bg-gradient-primary">

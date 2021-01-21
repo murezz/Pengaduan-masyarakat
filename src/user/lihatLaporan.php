@@ -43,14 +43,16 @@ $result = mysqli_query($conn, "SELECT * FROM pengaduan WHERE status = 'selesai' 
     </tr>
   </thead>
   <tbody>
+    <?php $i = 1; ?>
     <?php while ($row = mysqli_fetch_assoc($result)) : ?>
       <tr>
-        <th scope="row">1.</th>
+        <th scope="row"><?= $i; ?>.</th>
         <td><?= $row["tgl_pengaduan"]; ?></td>
         <td><?= $row["nik"]; ?></td>
         <td><?= $row["isi_laporan"]; ?></td>
-        <td><img src="../../assets/image/<?= $row["foto"]; ?>" width="50"></td>
+        <td><img src="../../assets/img/<?= $row["foto"]; ?>" width="50"></td>
       </tr>
+      <?php $i++; ?>
     <?php endwhile; ?>
   </tbody>
 </table>

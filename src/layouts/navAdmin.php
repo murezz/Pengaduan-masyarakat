@@ -95,8 +95,8 @@
           <!-- Nav Item - User Information -->
           <li class="nav-item dropdown no-arrow">
             <a class="nav-link dropdown-toggle text-gray-900" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-user-tie fa-sm fa-fw mr-2 text-gray-900"></i>
-              <span>Petugas</span>
+              <i class="fas fa-user-astronaut fa-sm fa-fw mr-2 text-gray-900"></i>
+              <span>Admin</span>
             </a>
 
             <!-- Dropdown - User Information -->

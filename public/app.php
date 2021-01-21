@@ -47,3 +47,18 @@ function verify($data)
 
     return mysqli_affected_rows($conn);
 }
+
+function tanggapan($data)
+{
+
+    global $conn;
+
+    $id = htmlspecialchars($data["id_pengaduan"]);
+    $tgl = htmlspecialchars($data["tgl_tanggapan"]);
+    $tanggapan = htmlspecialchars($data["tanggapan"]);
+    $id_petugas = htmlspecialchars($data["id_petugas"]);
+
+    mysqli_query($conn, "INSERT INTO tanggapan VALUES ('', '$id', '$tgl', '$tanggapan', '$id_petugas')");
+
+    return mysqli_affected_rows($conn);
+}

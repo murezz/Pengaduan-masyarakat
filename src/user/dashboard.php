@@ -2,6 +2,7 @@
 
 $title = 'Dashboard';
 
+
 require '../layouts/header.php';
 
 require '../layouts/navUser.php';

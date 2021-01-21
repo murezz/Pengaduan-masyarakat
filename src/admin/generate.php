@@ -25,7 +25,7 @@ require '../layouts/navAdmin.php';
   <div class="col-6">
     <div class="d-flex justify-content-end">
       <div class="card shadow col-6 py-2" data-aos="zoom-in">
-        <a href="#collapseCardExample" class="d-block card-header " data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
+        <a href="#generate" class="d-block card-header " data-toggle="collapse" role="button" aria-expanded="true" aria-controls="generate">
           <h6 class="m-0 font-weight-bold text-primary">Tutup Laporan</h6>
         </a>
       </div>
@@ -52,7 +52,7 @@ require '../layouts/navAdmin.php';
           </div>
         </div>
       </div>
-      <div class="collapse show" id="collapseCardExample">
+      <div class="collapse show" id="generate">
         <div class="card-body">
           <div class="row">
             <div class="col-6">

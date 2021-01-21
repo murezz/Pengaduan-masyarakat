@@ -20,3 +20,30 @@ function tambahAduan($data)
 
     return mysqli_affected_rows($conn);
 }
+
+
+function verify($data)
+{
+
+    global $conn;
+
+    $id = htmlspecialchars($data["id_pengaduan"]);
+    $tgl = htmlspecialchars($data["tgl_pengaduan"]);
+    $nik = htmlspecialchars($data["nik"]);
+    $isi = htmlspecialchars($data["isi_laporan"]);
+    $foto = htmlspecialchars($data["foto"]);
+    $status = htmlspecialchars($data["status"]);
+
+    $query = "UPDATE pengaduan SET
+                id_pengaduan = '$id',
+                tgl_pengaduan = '$tgl',
+                nik = '$nik',
+                isi_laporan = '$isi',
+                foto = '$foto',
+                status = '$status'
+                WHERE id_pengaduan = '$id' ";
+
+    mysqli_query($conn, $query);
+
+    return mysqli_affected_rows($conn);
+}

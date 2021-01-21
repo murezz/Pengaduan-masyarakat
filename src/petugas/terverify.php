@@ -2,9 +2,17 @@
 
 $title = 'Laporan Terverifikasi';
 
+require '../../public/app.php';
+
 require '../layouts/header.php';
 
 require '../layouts/navPetugas.php';
+
+
+
+// logic backend
+
+$result = mysqli_query($conn, "SELECT * FROM pengaduan WHERE status = 'selesai' ORDER BY id_pengaduan DESC");
 
 ?>
 
@@ -25,7 +33,7 @@ require '../layouts/navPetugas.php';
 <hr>
 
 
-<table class="table table-bordered shadow-sm" data-aos="fade-up" data-aos-duration="700">
+<table class="table table-bordered shadow-sm text-center" data-aos="fade-up" data-aos-duration="700">
   <thead>
     <tr class="text-center">
       <th scope="col">No</th>
@@ -37,16 +45,16 @@ require '../layouts/navPetugas.php';
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1.</th>
-      <td>19/01/2021</td>
-      <td>098912290</td>
-      <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut consequuntur placeat ducimus, illo sint ratione ipsum iste molestias repudiandae veritatis error nostrum in quo sed.</td>
-      <td><img src="../../assets/img/img-buat-laporan.svg" width="50" alt=""></td>
-      <td>
-        <a href="" class="btn btn-outline-success">Tanggapi</a>
-      </td>
-    </tr>
+    <?php while ($row = mysqli_fetch_assoc($result)) : ?>
+      <tr>
+        <th scope="row">1.</th>
+        <td><?= $row["tgl_pengaduan"]; ?></td>
+        <td><?= $row["nik"]; ?></td>
+        <td><?= $row["isi_laporan"]; ?></td>
+        <td><img src="../../assets/img/<?= $row["foto"]; ?>" width="50"></td>
+        <td><a href="tanggapi.php?id_pengaduan=<?= $row["id_pengaduan"]; ?>" class="btn btn-outline-success">Tanggapi</a></td>
+      </tr>
+    <?php endwhile; ?>
   </tbody>
 </table>
 

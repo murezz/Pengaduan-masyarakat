@@ -3,17 +3,19 @@ I Creating a website about public complaints created using the following templat
 
 website display
 
-Landing pages
-```sh
-<img src="assets/img/Landing.jpg">
-```
 
-Login
-```sh
+
+- Landing pages
+
+<img src="assets/img/landing.jpg" alt="">
+
+
+- Login
+
 <img src="assets/img/login.jpg">
-```
 
-Dashboard
-```sh
-<img src="assets/img/Dashboard.jpg">
-```
+
+- Dashboard
+
+<img src="assets/img/dashboard.jpg">
+

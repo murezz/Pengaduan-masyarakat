@@ -9,6 +9,7 @@ require '../layouts/header.php';
 
 // logic backend
 
+
 if (isset($_POST['submit'])) {
 
   $username = $_POST['username'];
@@ -26,20 +27,20 @@ if (isset($_POST['submit'])) {
 
 
 <div class="d-flex justify-content-center py-5 mt-5">
-  <div class="card shadow mt-3 border-bottom-primary bg-gray-100">
-
-    <?php if (isset($error)) : ?>
-
-      <div class="alert alert-dismissible fade show" style="background-color: #b52d2d;" role="alert">
-        <h6 class="text-gray-100 mt-2">Maaf username atau password anda salah</h6>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true" class="text-light">&times;</span>
-        </button>
-      </div>
-
-    <?php endif; ?>
-
+  <div class="card shadow mt-3 border-bottom-primary bg-gray-100" data-aos="fade-down">
     <div class="card-body">
+
+      <?php if (isset($error)) : ?>
+
+        <div class="alert alert-dismissible fade show" style="background-color: #b52d2d;" role="alert">
+          <h6 class="text-gray-100 mt-2">Maaf username atau password anda salah</h6>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true" class="text-light">&times;</span>
+          </button>
+        </div>
+
+      <?php endif; ?>
+
       <h3 class="text-center text-primary text-uppercase text-bold">Login</h3>
       <hr class="bg-gradient-primary">
       <div class="row">
@@ -60,10 +61,10 @@ if (isset($_POST['submit'])) {
             </div>
             <div class="">
               <button type="submit" name="submit" class="btn btn-primary shadow-lg">Masuk</button>
-              <a href="" class="btn btn-outline-primary ml-2">Masuk sebagai petugas</a>
+              <a href="../petugas/login.php" class="btn btn-outline-primary ml-2">Masuk sebagai petugas</a>
             </div>
             <div class="text-center mt-2">
-              <a href="register" class="text-gray-600" style="text-decoration: none;">Belum Punya Akun? Buat Akun</a>
+              <a href="register.php" class="text-gray-600" style="text-decoration: none;">Belum Punya Akun?</a>
             </div>
           </form>
         </div>

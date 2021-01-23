@@ -45,7 +45,7 @@ if (isset($_POST["submit"])) {
       <?php if (isset($error)) : ?>
 
         <div class="alert alert-dismissible fade show" style="background-color: #b52d2d;" role="alert">
-          <h6 class="text-light">Maaf aduan atau laporan anda gagal di proses</h6>
+          <h6 class="text-light mt-2">Maaf aduan atau laporan anda gagal di proses</h6>
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true" class="text-light">&times;</span>
           </button>

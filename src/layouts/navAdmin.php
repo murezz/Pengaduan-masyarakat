@@ -60,6 +60,13 @@
         <span>Generate Laporan</span></a>
     </li>
 
+    <!-- Nav Item - Petugas -->
+    <li class="nav-item <?php if ($title === "Data Petugas") echo "active"; ?>">
+      <a class="nav-link" href="../admin/petugas.php">
+        <i class="fas fa-user-tie"></i>
+        <span>Data Petugas</span></a>
+    </li>
+
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
 
@@ -92,25 +99,9 @@
         <!-- Topbar Navbar -->
         <ul class="navbar-nav ml-auto">
 
-          <!-- Nav Item - User Information -->
+          <!-- Nav Item - logout -->
           <li class="nav-item dropdown no-arrow">
-            <a class="nav-link dropdown-toggle text-gray-900" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-user-astronaut fa-sm fa-fw mr-2 text-gray-900"></i>
-              <span>Admin</span>
-            </a>
-
-            <!-- Dropdown - User Information -->
-            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-              <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                <i class="fas fa-users fa-sm fa-fw mr-2 text-gray-400"></i>
-                Login User
-              </a>
-              <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                Logout Account
-              </a>
-            </div>
-
+            <a href="../petugas/login.php" class="btn btn-outline-danger">Logout</a>
           </li>
 
         </ul>

@@ -85,31 +85,15 @@
         <!-- Topbar Navbar -->
         <ul class="navbar-nav ml-auto">
 
-          <!-- Nav Item - User Information -->
+          <!-- Nav Item - Logout -->
           <li class="nav-item dropdown no-arrow">
-            <a class="nav-link dropdown-toggle text-gray-900" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-user-tie fa-sm fa-fw mr-2 text-gray-900"></i>
-              <span>Petugas</span>
-            </a>
-
-            <!-- Dropdown - User Information -->
-            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-              <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                <i class="fas fa-users fa-sm fa-fw mr-2 text-gray-400"></i>
-                Login User
-              </a>
-              <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                Logout Account
-              </a>
-            </div>
-
+            <a href="../petugas/login.php" class="btn btn-outline-danger">Logout</a>
           </li>
 
         </ul>
 
       </nav>
 
-      <div class="container">
+      <!-- End of Topbar -->
 
-        <!-- End of Topbar -->
+      <div class="container">

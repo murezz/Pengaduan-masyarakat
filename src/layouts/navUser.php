@@ -53,7 +53,7 @@
         </li>
 
         <!-- Nav Item - Generate -->
-        <li class="nav-item <?php if ($title === "Generate") echo "active"; ?>">
+        <li class="nav-item <?php if ($title === "Generate Laporan") echo "active"; ?>">
             <a class="nav-link" href="../user/generate.php">
                 <i class="fas fa-folder-open"></i>
                 <span>Generate Laporan</span></a>
@@ -93,22 +93,9 @@
 
                     <!-- Nav Item - User Information -->
                     <li class="nav-item dropdown no-arrow">
-                        <a class="nav-link dropdown-toggle text-gray-900" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-users fa-sm fa-fw mr-2 text-gray-900"></i>
-                            <span>Masyarakat</span>
-                        </a>
 
                         <!-- Dropdown - User Information -->
-                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                <i class="fas fa-user-tie fa-sm fa-fw mr-2 text-gray-400"></i>
-                                Login Petugas
-                            </a>
-                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                Logout Account
-                            </a>
-                        </div>
+                        <a href="../user/" class="btn btn-outline-danger">Logout</a>
 
                     </li>
 
@@ -116,6 +103,6 @@
 
             </nav>
 
-            <div class="container">
+            <!-- End of Topbar -->
 
-                <!-- End of Topbar -->
+            <div class="container">

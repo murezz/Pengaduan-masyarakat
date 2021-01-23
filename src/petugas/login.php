@@ -26,6 +26,8 @@ if (isset($_POST['submit'])) {
     } else if ($_SESSION['level'] = $row['level'] == 'petugas') {
       header("location:dashboard.php");
     }
+  } else {
+    $error = true;
   }
 }
 
@@ -33,20 +35,19 @@ if (isset($_POST['submit'])) {
 
 
 <div class="d-flex justify-content-center py-5 mt-5">
-  <div class="card shadow mt-3 border-bottom-primary bg-gray-100 w-50">
-
-    <?php if (isset($error)) : ?>
-
-      <div class="alert alert-dismissible fade show" style="background-color: #b52d2d;" role="alert">
-        <h6 class="text-gray-100 mt-2">Maaf username atau password anda salah</h6>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true" class="text-light">&times;</span>
-        </button>
-      </div>
-
-    <?php endif; ?>
-
+  <div class="card shadow mt-3 border-bottom-primary bg-gray-100 w-50" data-aos="fade-down">
     <div class="card-body">
+
+      <?php if (isset($error)) : ?>
+
+        <div class="alert alert-dismissible fade show" style="background-color: #b52d2d;" role="alert">
+          <h6 class="text-gray-100 mt-2">Maaf username atau password anda salah</h6>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true" class="text-light">&times;</span>
+          </button>
+        </div>
+
+      <?php endif; ?>
       <h3 class="text-center text-primary text-uppercase text-bold">Login</h3>
       <hr class="bg-gradient-primary">
       <div class="row">

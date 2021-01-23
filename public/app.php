@@ -62,3 +62,73 @@ function tanggapan($data)
 
     return mysqli_affected_rows($conn);
 }
+
+function regisUser($data)
+{
+
+    global $conn;
+
+    $nik = htmlspecialchars($data["nik"]);
+    $nama = htmlspecialchars($data["nama"]);
+    $username = htmlspecialchars($data["username"]);
+    $password = htmlspecialchars($data["password"]);
+    $telp = htmlspecialchars($data["telp"]);
+
+    mysqli_query($conn, "INSERT INTO masyarakat VALUES ('$nik', '$nama', '$username', '$password', '$telp')");
+
+    return mysqli_affected_rows($conn);
+}
+
+
+function addPetugas($data)
+{
+
+    global $conn;
+
+    $nama = htmlspecialchars($data["nama_petugas"]);
+    $username = htmlspecialchars($data["username"]);
+    $password = htmlspecialchars($data["password"]);
+    $telp = htmlspecialchars($data["telp"]);
+    $level = htmlspecialchars($data["level"]);
+
+    mysqli_query($conn, "INSERT INTO petugas VALUES ('', '$nama', '$username', '$password', '$telp', '$level')");
+
+    return mysqli_affected_rows($conn);
+}
+
+function editPetugas($data)
+{
+
+    global $conn;
+
+    $id = htmlspecialchars($data["id_petugas"]);
+    $nama = htmlspecialchars($data["nama_petugas"]);
+    $username = htmlspecialchars($data["username"]);
+    $password = htmlspecialchars($data["password"]);
+    $telp = htmlspecialchars($data["telp"]);
+    $level = htmlspecialchars($data["level"]);
+
+    $query = "UPDATE petugas SET
+                nama_petugas = '$nama',
+                username = '$username',
+                password = '$password',
+                telp = '$telp',
+                level = '$level'
+                WHERE id_petugas = '$id'
+                ";
+
+    mysqli_query($conn, $query);
+
+    return mysqli_affected_rows($conn);
+}
+
+
+function deletePetugas($id)
+{
+
+    global $conn;
+
+    mysqli_query($conn, "DELETE FROM petugas WHERE id_petugas = $id");
+
+    return mysqli_affected_rows($conn);
+}

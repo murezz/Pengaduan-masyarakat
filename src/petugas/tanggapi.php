@@ -80,9 +80,9 @@ if (isset($_POST["submit"])) {
 							<div class="form-group">
 								<select name="id_petugas" id="petugas" class="form-control">
 									<option disabled selected>Pilih Petugas</option>
-									<option value="2">Pak firman</option>
-									<option value="3">rizki akbar</option>
-									<option value="2">taufan</option>
+									<option value="1">Firman Aulia</option>
+									<option value="2">rizki akbar</option>
+									<option value="3">taufan</option>
 								</select>
 							</div>
 							<button type="submit" name="submit" class="btn btn-primary">OK!</button>
